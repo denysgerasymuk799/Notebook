@@ -79,6 +79,9 @@ class Menu:
         sys.exit(0)
 
     def display_definiotion_menu(self):
+        """
+        Display definition menu
+        """
         print(
             """
             1. об’єкт,
@@ -92,6 +95,9 @@ class Menu:
         )
 
     def definitions(self):
+        """
+        Run menu
+        """
         definitions = "об’єкт, атрибути класу, методи класу, self, метод __init__, метод __str__"
         definitions = definitions.split(",")
         print(definitions)
@@ -105,6 +111,9 @@ class Menu:
                 print("{0} is not a valid choice".format(n_definition))
 
     def explain_object(self):
+        """
+        Such functions explain certain definition
+        """
         print()
         print("Об'єкт – модель, яка може щось зробити й існують речі,"
               " які можуть бути зроблені для неї та з нею.")
